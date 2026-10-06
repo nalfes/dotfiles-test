@@ -129,7 +129,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
 # ~/.bashrc
+
+eval "$(mise activate bash)"
 
 command -v starship >/dev/null && eval "$(starship init bash)"
 
