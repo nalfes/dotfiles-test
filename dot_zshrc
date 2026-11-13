@@ -47,6 +47,7 @@ if command -v nvim > /dev/null ; then
   export VISUAL="nvim"
 fi
 
+export KUBECONFIG="$HOME/.kube/config"
 export LANG="en_US.UTF-8"
 
 
@@ -57,6 +58,10 @@ autoload -Uz compinit && compinit
 
 if command -v fzf > /dev/null ; then
   source <(fzf --zsh)
+fi
+
+if command -v kubectl > /dev/null ; then
+  source <(kubectl completion zsh)
 fi
 
 if command -v flux > /dev/null ; then
@@ -75,6 +80,10 @@ fi
 alias v=nvim
 alias gp="git pull"
 alias lg=lazygit
+alias homelab='cd ~/homelab'
+
+alias k=kubectl
+alias kgp='kubectl get pods'
 
 if command -v bat > /dev/null ; then
   alias cat="bat"
