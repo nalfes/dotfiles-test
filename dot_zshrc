@@ -10,7 +10,7 @@ SAVEHIST=100000
 
 #starship usage
 
-if command -v starship >/dev/nell ; then
+if command -v starship >/dev/null ; then
   eval "$(starship init zsh)"
 fi
 
