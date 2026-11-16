@@ -81,6 +81,7 @@ alias v=nvim
 alias gp="git pull"
 alias lg=lazygit
 alias homelab='cd ~/homelab'
+alias home='cd ~/'
 
 alias k=kubectl
 alias kgp='kubectl get pods'
