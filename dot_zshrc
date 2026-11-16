@@ -55,6 +55,7 @@ export TZ=Europe/Oslo
 
 
 autoload -Uz compinit && compinit
+zstyle ':completion:*' menu select
 
 if command -v fzf > /dev/null ; then
   source <(fzf --zsh)
@@ -81,7 +82,7 @@ alias v=nvim
 alias gp="git pull"
 alias lg=lazygit
 alias homelab='cd ~/homelab'
-alias home='cd ~/'
+lias home='cd ~/'
 
 alias k=kubectl
 alias kgp='kubectl get pods'
