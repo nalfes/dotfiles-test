@@ -50,7 +50,7 @@ fi
 export KUBECONFIG="$HOME/.kube/config"
 export LANG="en_US.UTF-8"
 export TZ=Europe/Oslo
-
+export PATH="$PATH:$HOME/.rd/bin"
 # ~~~~~~~~~~~~~~~ Completion ~~~~~~~~~~~~~~~~~~~~~~~~
 
 
