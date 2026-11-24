@@ -92,7 +92,6 @@ fi
 
 alias k='kubectl'
 
-source /etc/bash_completion
 command -v kubectl >/dev/null && source <(kubectl completion bash)
 complete -o default -F __start_kubectl k
 
